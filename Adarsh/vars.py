@@ -13,7 +13,7 @@ class Var(object):
     SESSION_NAME = str(getenv('SESSION_NAME', 'F2LxBot'))
     SLEEP_THRESHOLD = int(getenv('SLEEP_THRESHOLD', '60'))
     WORKERS = int(getenv('WORKERS', '4'))
-    BIN_CHANNEL = int(getenv('BIN_CHANNEL',"gfyfuvicuchc"))
+    BIN_CHANNEL = int(getenv('BIN_CHANNEL',"-1002072662567"))
     PORT = int(getenv('PORT', 8080))
     BIND_ADRESS = str(getenv('WEB_SERVER_BIND_ADDRESS', "https://miniature-gae-telegram-bots-7a6a60ef.koyeb.app/"))
     OWNER_ID = int(getenv('OWNER_ID', 6214889840))
