@@ -25,7 +25,7 @@ class Var(object):
         APP_NAME = str(getenv('APP_NAME'))
     else:
         ON_HEROKU = False
-    FQDN = str(getenv('FQDN',"https://miniature-gae-telegram-bots-7a6a60ef.koyeb.app/")) if not ON_HEROKU or getenv('FQDN',""https://miniature-gae-telegram-bots-7a6a60ef.koyeb.app/) else APP_NAME+'.herokuapp.com'
+    FQDN = str(getenv('FQDN',"https://miniature-gae-telegram-bots-7a6a60ef.koyeb.app/")) if not ON_HEROKU or getenv('FQDN',"https://miniature-gae-telegram-bots-7a6a60ef.koyeb.app/") else APP_NAME+'.herokuapp.com'
     URL = "https://{}/".format(FQDN) if ON_HEROKU or NO_PORT else \
         "http://{}:{}/".format(FQDN, PORT)
     DATABASE_URL = str(getenv('DATABASE_URL'))
